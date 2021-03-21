@@ -1,0 +1,10 @@
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\bin\Debug\adpt_xcl_tool.exe.config
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\bin\Debug\adpt_xcl_tool.exe
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\bin\Debug\adpt_xcl_tool.pdb
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.csprojAssemblyReference.cache
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.Form1.resources
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.Properties.Resources.resources
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.csproj.GenerateResource.cache
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.csproj.CoreCompileInputs.cache
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.exe
+C:\Users\jbritoli\Documents\GIT\adpt_xcl_tool\obj\Debug\adpt_xcl_tool.pdb

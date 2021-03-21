@@ -29,75 +29,89 @@ namespace adpt_xcl_tool
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.OriginFile_Path = new System.Windows.Forms.TextBox();
+            this.OriginFile_Btn = new System.Windows.Forms.Button();
+            this.SaveTo_Path = new System.Windows.Forms.TextBox();
+            this.OriginalFilePath_Label = new System.Windows.Forms.Label();
+            this.SaveTo_Label = new System.Windows.Forms.Label();
+            this.Execute_btn = new System.Windows.Forms.Button();
+            this.SaveTo_Btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // OriginFile_Path
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(499, 22);
-            this.textBox1.TabIndex = 0;
+            this.OriginFile_Path.Location = new System.Drawing.Point(12, 70);
+            this.OriginFile_Path.Name = "OriginFile_Path";
+            this.OriginFile_Path.Size = new System.Drawing.Size(499, 22);
+            this.OriginFile_Path.TabIndex = 0;
             // 
-            // button1
+            // OriginFile_Btn
             // 
-            this.button1.Location = new System.Drawing.Point(517, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Select";
-            this.button1.UseVisualStyleBackColor = true;
+            this.OriginFile_Btn.Location = new System.Drawing.Point(517, 69);
+            this.OriginFile_Btn.Name = "OriginFile_Btn";
+            this.OriginFile_Btn.Size = new System.Drawing.Size(75, 23);
+            this.OriginFile_Btn.TabIndex = 1;
+            this.OriginFile_Btn.Text = "Select";
+            this.OriginFile_Btn.UseVisualStyleBackColor = true;
+            this.OriginFile_Btn.Click += new System.EventHandler(this.OriginFile_Btn_Click);
             // 
-            // textBox2
+            // SaveTo_Path
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(499, 22);
-            this.textBox2.TabIndex = 2;
+            this.SaveTo_Path.Location = new System.Drawing.Point(12, 129);
+            this.SaveTo_Path.Name = "SaveTo_Path";
+            this.SaveTo_Path.Size = new System.Drawing.Size(499, 22);
+            this.SaveTo_Path.TabIndex = 2;
             // 
-            // label1
+            // OriginalFilePath_Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Origin File";
+            this.OriginalFilePath_Label.AutoSize = true;
+            this.OriginalFilePath_Label.Location = new System.Drawing.Point(9, 50);
+            this.OriginalFilePath_Label.Name = "OriginalFilePath_Label";
+            this.OriginalFilePath_Label.Size = new System.Drawing.Size(105, 17);
+            this.OriginalFilePath_Label.TabIndex = 4;
+            this.OriginalFilePath_Label.Text = "Origin File Path";
             // 
-            // label2
+            // SaveTo_Label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Corrected File Name";
+            this.SaveTo_Label.AutoSize = true;
+            this.SaveTo_Label.Location = new System.Drawing.Point(12, 109);
+            this.SaveTo_Label.Name = "SaveTo_Label";
+            this.SaveTo_Label.Size = new System.Drawing.Size(56, 17);
+            this.SaveTo_Label.TabIndex = 5;
+            this.SaveTo_Label.Text = "Save to";
             // 
-            // button3
+            // Execute_btn
             // 
-            this.button3.Location = new System.Drawing.Point(266, 217);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Execute_btn.Location = new System.Drawing.Point(266, 217);
+            this.Execute_btn.Name = "Execute_btn";
+            this.Execute_btn.Size = new System.Drawing.Size(75, 23);
+            this.Execute_btn.TabIndex = 6;
+            this.Execute_btn.Text = "Execute";
+            this.Execute_btn.UseVisualStyleBackColor = true;
+            this.Execute_btn.Click += new System.EventHandler(this.Execute_btn_Click);
+            // 
+            // SaveTo_Btn
+            // 
+            this.SaveTo_Btn.Location = new System.Drawing.Point(517, 128);
+            this.SaveTo_Btn.Name = "SaveTo_Btn";
+            this.SaveTo_Btn.Size = new System.Drawing.Size(75, 23);
+            this.SaveTo_Btn.TabIndex = 7;
+            this.SaveTo_Btn.Text = "Select";
+            this.SaveTo_Btn.UseVisualStyleBackColor = true;
+            this.SaveTo_Btn.Click += new System.EventHandler(this.SaveTo_Btn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 252);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SaveTo_Btn);
+            this.Controls.Add(this.Execute_btn);
+            this.Controls.Add(this.SaveTo_Label);
+            this.Controls.Add(this.OriginalFilePath_Label);
+            this.Controls.Add(this.SaveTo_Path);
+            this.Controls.Add(this.OriginFile_Btn);
+            this.Controls.Add(this.OriginFile_Path);
             this.Name = "Form1";
             this.Text = "adpt_xcl_tool";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -108,12 +122,13 @@ namespace adpt_xcl_tool
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox OriginFile_Path;
+        private System.Windows.Forms.Button OriginFile_Btn;
+        private System.Windows.Forms.TextBox SaveTo_Path;
+        private System.Windows.Forms.Label OriginalFilePath_Label;
+        private System.Windows.Forms.Label SaveTo_Label;
+        private System.Windows.Forms.Button Execute_btn;
+        private System.Windows.Forms.Button SaveTo_Btn;
     }
 }
 
